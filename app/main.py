@@ -8,5 +8,5 @@ app.include_router(api_router,prefix="/api/v1")
 @app.get("/",tags=["sample root "])
 async def sample():
     return {"hello": "world"}
-
+#handler for aws lambda
 handler = Mangum(app)
