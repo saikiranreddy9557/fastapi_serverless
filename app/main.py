@@ -9,4 +9,5 @@ app.include_router(api_router,prefix="/api/v1")
 async def sample():
     return {"hello": "world"}
 #handler for aws lambda
+#sample
 handler = Mangum(app)
